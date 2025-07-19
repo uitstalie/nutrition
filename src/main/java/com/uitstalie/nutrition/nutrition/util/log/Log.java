@@ -6,8 +6,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Log {
-    private static Logger LOG = LoggerFactory.getLogger(Nutrition.MODID);
-    private static String PREFIX = "Nutrition_";
+    private static final Logger LOG = LoggerFactory.getLogger(Nutrition.MODID);
+    private static final String PREFIX = "Nutrition_";
     public static void d(String tag,String message){
         LOG.debug("{}:{}",PREFIX+tag,message);
     }
