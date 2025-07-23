@@ -1,6 +1,4 @@
-package com.uitstalie.nutrition.nutrition.data;
-
-import org.checkerframework.checker.units.qual.N;
+package com.uitstalie.nutrition.nutrition.data.group;
 
 public class NutritionGroup {
     private String groupName;

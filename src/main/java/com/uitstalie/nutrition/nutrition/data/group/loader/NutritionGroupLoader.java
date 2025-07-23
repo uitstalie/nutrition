@@ -1,19 +1,16 @@
-package com.uitstalie.nutrition.nutrition.loader;
+package com.uitstalie.nutrition.nutrition.data.group.loader;
 
 import com.google.gson.*;
 import com.uitstalie.nutrition.nutrition.Nutrition;
-import com.uitstalie.nutrition.nutrition.data.NutritionGroup;
+import com.uitstalie.nutrition.nutrition.data.group.NutritionGroup;
 import com.uitstalie.nutrition.nutrition.util.log.Log;
-import net.minecraft.client.multiplayer.chat.report.AbuseReportSender;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.Services;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener;
 import net.minecraft.util.GsonHelper;
 import net.minecraft.util.profiling.ProfilerFiller;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
