@@ -113,19 +113,4 @@ public class Nutrition {
         // Do something when the server starts
         LOGGER.info("HELLO from server starting");
     }
-
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @EventBusSubscriber(modid = MODID, value = Dist.CLIENT)
-    public static class ClientModEvents {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-            // Some client setup code
-            LOGGER.info("HELLO FROM CLIENT SETUP");
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
-        }
-        @SubscribeEvent
-        public static void onClientTick(ClientTickEvent.Post event){
-            LOGGER.info("TICK: {}", "uitstalie");
-        }
-    }
 }
