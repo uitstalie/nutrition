@@ -123,9 +123,5 @@ public class Nutrition {
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         }
-        @SubscribeEvent
-        public static void onClientTick(ClientTickEvent.Post event){
-            LOGGER.info("TICK: {}", "uitstalie");
-        }
     }
 }
