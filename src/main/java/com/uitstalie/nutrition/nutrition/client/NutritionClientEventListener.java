@@ -7,6 +7,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
 /**
  * use this as the general client event listener
@@ -22,4 +23,8 @@ public class NutritionClientEventListener {
         Log.d("NutritionClientEventListener", "onClientSetup");
     }
 
+    @SubscribeEvent
+    public static void onPlayerTick(PlayerTickEvent.Post event) {
+
+    }
 }

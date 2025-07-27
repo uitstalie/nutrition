@@ -13,8 +13,13 @@ public class NutritionGroupManager {
     public void reload(){
 
     }
-    public void insert(String tag,NutritionGroup group){
+    public int insert(String name,NutritionGroup group){
+        if(!manager.containsKey(name)){
+            manager.put(name,group);
+        }
+        else{
 
+        }
     }
     public void get(){
 
