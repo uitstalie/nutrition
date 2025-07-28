@@ -8,6 +8,10 @@
   ],
   "client": [
   ],
+  "server": [
+    "server.NutritionFoodDataMixin",
+    "server.NutritionPlayerMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }
