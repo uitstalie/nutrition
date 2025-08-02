@@ -1,4 +1,4 @@
-package com.uitstalie.nutrition.nutrition.mixin.server;
+package com.uitstalie.nutrition.nutrition.mixin.client;
 
 import com.uitstalie.nutrition.nutrition.api.mixin.PlayerInterface;
 import net.minecraft.world.entity.player.Player;
@@ -10,14 +10,13 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(Player.class)
-public class NutritionPlayerMixin {
+public abstract class NutritionPlayerMixin {
 
-    //this is just a tracker for transparent player to
     @Shadow
     protected FoodData foodData;
 
     @Inject(at = @At("RETURN"),method = "<init>*")
     public void nutrition$init(CallbackInfo ci){
-        ((PlayerInterface)foodData).setPlayer((Player)(Object)this);
+        ((PlayerInterface)foodData).setPlayer(((Player)(Object)this));
     }
 }

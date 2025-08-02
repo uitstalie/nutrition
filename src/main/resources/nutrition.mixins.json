@@ -7,10 +7,10 @@
   "mixins": [
   ],
   "client": [
+    "client.NutritionFoodDataMixin",
+    "client.NutritionPlayerMixin"
   ],
   "server": [
-    "server.NutritionFoodDataMixin",
-    "server.NutritionPlayerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
